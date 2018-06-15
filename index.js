@@ -28,6 +28,12 @@ function viewCart() {
   for(var i = 0; i < cart.length; i++){
     if(cart.length === 1){
       outputString += `${cart[i].itemName} at $${cart[i].itemName}.`
+    }else{
+      if(i === cart.length - 1){
+        outputString += `and ${cart[i].itemName} at $${cart[i].itemName}.`
+      }else{
+        outputString += `${cart[i].itemName} at $${cart[i].itemName}, `
+      }
     }
   }
   return outputString
