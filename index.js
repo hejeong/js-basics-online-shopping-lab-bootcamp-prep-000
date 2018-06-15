@@ -68,6 +68,6 @@ function placeOrder(cardNumber) {
     while(cart.length > 0){
       cart.pop()
     }
-    return `Your total cost is ${finalPrice}, which will be charged to the card ${cardNumber}.`
+    return `Your total cost is $${finalPrice}, which will be charged to the card ${cardNumber}.`
   }
 }
