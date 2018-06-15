@@ -16,6 +16,7 @@ function addToCart(item) {
     itemName: ${item}, itemPrice: ${price}
  }
  cart.push(newObj)
+ return cart
 }
 
 function viewCart() {
