@@ -27,12 +27,12 @@ function viewCart() {
   var outputString = "In your cart, you have "
   for(var i = 0; i < cart.length; i++){
     if(cart.length === 1){
-      outputString += `${cart[i].itemName} at $${cart[i].itemName}.`
+      outputString += `${cart[i].itemName} at $${cart[i].itemPrice}.`
     }else{
       if(i === cart.length - 1){
-        outputString += `and ${cart[i].itemName} at $${cart[i].itemName}.`
+        outputString += `and ${cart[i].itemName} at $${cart[i].itemPrice}.`
       }else{
-        outputString += `${cart[i].itemName} at $${cart[i].itemName}, `
+        outputString += `${cart[i].itemName} at $${cart[i].itemPrice}, `
       }
     }
   }
