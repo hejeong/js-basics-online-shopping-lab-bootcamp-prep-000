@@ -30,6 +30,7 @@ function viewCart() {
       outputString += ", "
     }
   }
+  return outputString
 }
 
 function total() {
